@@ -119,6 +119,12 @@ public class LibraryGUI extends JFrame {
                 displayArea.append("Author: " + author + "\n");
                 displayArea.append("Pages: " + pages + "\n");
                 displayArea.append("ID: " + bookId + "\n\n");
+
+                // Clear the input fields after adding the book
+                bookTitleField.setText("");
+                bookAuthorField.setText("");
+                bookPagesField.setText("");
+                bookIdField.setText("");
             } else {
                 displayArea.append("Error: Invalid Book ID format. It should be 'B' followed by 3 digits.\n\n");
             }
@@ -140,6 +146,10 @@ public class LibraryGUI extends JFrame {
                 displayArea.append("Added Member:\n");
                 displayArea.append("Name: " + memberName + "\n");
                 displayArea.append("ID: " + memberId + "\n\n");
+
+                // Clear the input fields after adding the member
+                memberNameField.setText("");
+                memberIdField.setText("");
             } else {
                 displayArea.append("Error: Invalid Member ID format. It should be 'M' followed by 3 digits.\n\n");
             }
